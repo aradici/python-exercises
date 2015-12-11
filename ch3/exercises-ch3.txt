@@ -1,0 +1,29 @@
+1) create a new list with 3 random strings as elements
+
+2) create a new list with 3 random integers as elements
+
+3) create a new list with 1 integer and 2 strings as elements
+
+4) create list A with 3 strings as elements, copy it to list B
+
+5) same exercise as (4), then remove the last element from list B (and only there)
+
+6) create a dictionary with 3 random keys and 3 random strings as elements
+
+7) same as (6), remove the last element and, for the same key in the dictionary,
+  add a list with 3 strings as elements
+
+8) starting from a dictionary as (6), create a method which has as inputs: "key"
+(the dictionary key), "value" (the value to add in the list present at key) and
+the dictionary itself, make sure that the method adds key+element to the
+dictionary or returns an error if it exists
+
+    Example for (8)
+    starting with: dictionary['key'] = ['abc', 'ced', 'def']
+    call: method('key', 'newvalue', dictionary)
+    then the dictionary has: dictionary['key'] = ['abc', 'ced',
+                                                  'def', 'newvalue']
+9) create a dictionary as (6), with 20 elements (possibly random) and order the
+dictionary by value
+
+10) create a dictionary with strings as key and tuple as elements
