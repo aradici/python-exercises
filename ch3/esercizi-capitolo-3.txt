@@ -1,0 +1,38 @@
+1) creare nuova lista con 3 stringhe random come elementi
+2) creare nuova lista con 3 interi random come elementi
+3) creare nuova lista con 1 intero e 2 stringhe come elementi
+
+4) creare lista A come 3 stringhe come elementi, copiarla in lista B
+5) stesso esercizio del (4), rimuovere ultimo elemento solo dalla lista B
+
+6) creare un dizionario con 3 chiavi random e 3 stringhe come elementi
+7) stesso del (3), rimuovere l'ultimo elemento e, per la stessa chiave nel dizionario, aggiungere
+   una lista con 3 stirnghe come elementi
+
+8) partendo da un dizionario come (6), creare un metodo che ha come input, "chiave" (key della
+lista), "valore" (valore da aggiungere alla lista) e la ista stessa; fare in modo che il metodo
+aggiunga chiave + elemento al dizionario o ritorni un errore se esiste gia'
+
+9) creare un dizionario come (6), con 20 elementi (possibilmente random) e ordinarli per valore
+(nota: niente copia/incolla da stack overflow, PENSARE COME FARE).
+
+10) creare un dizionario con stringhe come chiavi e tuple come elementi
+
+11) creare un metodo che accetta tre parametri, (1) chiave (2) dizionario 1 (3) dizionario 2. Il
+metodo aggiunge il dizionario 2 dentro il dizionario 1 alla posizione indicata da "chiave", printare
+per verificare il risultato.
+
+12) creare un dizionario come da (6) e dopo averlo creato creare una lista che contiene solo le
+chiavi del dizionario come elementi
+
+13) stesso del (12) ma la lista da creare deve contenere solo gli elementi del dizionario come
+elementi della lista stessa
+
+14) creare un dizionario qualsiasi, poi creare un metodo che accetta "chiave", "elemento" (stringa)
+e "dizionario" come valore e una volta chiamato prova ad aggiungere l'elemento al dizionario nella
+posizione "chiave", non direttamente ma dentro una lista, il risultato deve essere il seguente
+
+metodo("chiave", "valore", dizionario) -> dizionario["chiave"] = ["valore"]
+
+15) creare un metodo che accetta una chiave e rimuove un elemento presente nel dizionario con quella
+chiave, stampare tutto a schermo prima e dopo l'uso del metodo per verificare che tutto funzioni.
