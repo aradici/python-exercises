@@ -4,16 +4,16 @@
 import random
 import string
 
-def rndstrng():
-    stringarandom = ''
-    for _ in xrange(10):
-        stringarandom += random.choice(string.ascii_letters+string.digits)
-    return stringarandom
+def randomstring(times, chars):
+    s = ''
+    for _ in xrange(times):
+        s += random.choice(chars)
+    return s
 
 def main():
     lista = []
     for _ in xrange(3):
-            stringa = rndstrng()
+            stringa = randomstring(random.randint(5,15), string.ascii_letters+string.digits )
             lista.append(stringa)
     print (lista)
 
