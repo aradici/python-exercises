@@ -28,7 +28,7 @@ def main():
             chiave = generate_key()
 
         dizio[chiave] = generate_value()        
-    print dizio
+    print (dizio)
 
 if __name__ == '__main__':
     main()

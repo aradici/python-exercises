@@ -16,7 +16,7 @@ def main():
     for _ in xrange(2):
         stringa = randomstring(random.randint(5,15), string.ascii_letters+string.digits )
         lista.append(stringa)
-    print lista
+    print (lista)
 
 if __name__ == '__main__':
     main()
