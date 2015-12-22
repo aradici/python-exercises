@@ -13,8 +13,8 @@ def randomstring(times, chars):
 def main():
     lista = []
     for _ in xrange(3):
-            stringa = randomstring(random.randint(5,15), string.ascii_letters+string.digits )
-            lista.append(stringa)
+        stringa = randomstring(random.randint(5,15), string.ascii_letters+string.digits )
+        lista.append(stringa)
     print (lista)
 
 if __name__ == '__main__':
