@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-# EX 01: create a new list with 3 random strings as elements
+# EX 04: create list A with 3 strings as elements, copy it to list B
 
+import copy
 import random
 import string
 
@@ -16,7 +17,9 @@ def main():
         stringa = randomstring(random.randint(5, 15), 
                                string.ascii_letters + string.digits )
         lista.append(stringa)
-    print(lista)
+    lista2 = copy.copy(lista)
+    print("this is the content of the original list: {}".format(lista))
+    print("this is the content of the copied list: {}".format(lista2))
 
 if __name__ == '__main__':
     main()

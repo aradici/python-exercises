@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# EX 01: create a new list with 3 random strings as elements
+# EX 03: create a new list with 1 integer and 2 strings as elements
 
 import random
 import string
@@ -12,7 +12,8 @@ def randomstring(times, chars):
 
 def main():
     lista = []
-    for _ in xrange(3):
+    lista.append(random.randint(1, 100))
+    for _ in xrange(2):
         stringa = randomstring(random.randint(5, 15), 
                                string.ascii_letters + string.digits )
         lista.append(stringa)
