@@ -13,11 +13,13 @@ def randomstring(times, chars):
 def main():
     lista = []
     for _ in xrange(3):
-        stringa = randomstring(random.randint(5,15), string.ascii_letters+string.digits )
+        stringa = randomstring(random.randint(5, 15), 
+                               string.ascii_letters + string.digits )
         lista.append(stringa)
     lista2 = lista[:-1]
-    print ("this is the content of the original list: {}".format(lista))
-    print ("this is the content of the copied list without the last element: {}".format(lista2))
+    print("this is the content of the original list: {}".format(lista))
+    print("this is the content of the copied list without the last element: 
+          {}".format(lista2))
 
 if __name__ == '__main__':
     main()

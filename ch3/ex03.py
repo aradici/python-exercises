@@ -12,11 +12,12 @@ def randomstring(times, chars):
 
 def main():
     lista = []
-    lista.append(random.randint(1,100))
+    lista.append(random.randint(1, 100))
     for _ in xrange(2):
-        stringa = randomstring(random.randint(5,15), string.ascii_letters+string.digits )
+        stringa = randomstring(random.randint(5, 15), 
+                               string.ascii_letters + string.digits )
         lista.append(stringa)
-    print (lista)
+    print(lista)
 
 if __name__ == '__main__':
     main()

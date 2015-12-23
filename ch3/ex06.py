@@ -13,11 +13,11 @@ def randomstring(times, chars):
     return s
 
 def generate_key():
-    key = random.randint(1,1000)
+    key = random.randint(1, 1000)
     return key
 
 def generate_value():
-    value = randomstring(random.randint(5,15), CHOICE)
+    value = randomstring(random.randint(5, 15), CHOICE)
     return value
 
 def main():
