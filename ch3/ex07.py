@@ -22,16 +22,14 @@ def generate_value():
 
 def main():
     dizio = dict()
-    chiave2 = generate_key()
-    dizio = {
-        chiave2:(generate_value(), generate_value(), generate_value())
-    }
-    for _ in xrange(2):
+    for _ in xrange(3):
         chiave = generate_key()
+        valore = generate_value()
         while(dizio.has_key(chiave)):
             chiave = generate_key()
 
-        dizio[chiave] = generate_value()        
+        dizio[chiave] = valore
+    dizio[chiave] = [generate_value(), generate_value(), generate_value()]
     print (dizio)
 
 if __name__ == '__main__':
