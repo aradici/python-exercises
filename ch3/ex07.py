@@ -28,7 +28,7 @@ def main():
         while(dizio.has_key(chiave)):
             chiave = generate_key()
 
-        dizio[chiave] = valore
+        dizio[chiave] = generate_value()
     dizio[chiave] = [generate_value(), generate_value(), generate_value()]
     print (dizio)
 
