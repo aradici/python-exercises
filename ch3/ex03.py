@@ -3,12 +3,7 @@
 
 import random
 import string
-
-def randomstring(times, chars):
-    s = ''
-    for _ in xrange(times):
-        s += random.choice(chars)
-    return s
+from functions import randomstring
 
 def main():
     lista = []

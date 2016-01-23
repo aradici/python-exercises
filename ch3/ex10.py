@@ -1,26 +1,10 @@
 #!/usr/bin/env python
-# 9) create a dictionary as (6), with 20 elements (possibly random) and order
-# the dictionary by value
+# 10) create a dictionary with strings as key and tuple as elements
 
 import random
 import string
 
-CHOICE = string.ascii_letters + string.digits
-
-def randomstring(times, chars):
-    s = ''
-    for _ in xrange(times):
-        s += random.choice(chars)
-    return s
-
-def generate_key():
-    key = random.randint(1, 1000)
-    return key
-
-def generate_value():
-    value = (randomstring(random.randint(5, 15), CHOICE), 
-            randomstring(random.randint(5, 15), CHOICE))
-    return value
+from functions import generate_key, generate_value
 
 def main():
     dizio = dict()
@@ -29,7 +13,7 @@ def main():
         while(dizio.has_key(chiave)):
             chiave = generate_key()
 
-        dizio[chiave] = generate_value()
+        dizio[chiave] = (generate_value(), generate_value())
     print (dizio)
 
 if __name__ == '__main__':

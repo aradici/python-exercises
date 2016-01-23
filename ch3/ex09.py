@@ -6,21 +6,7 @@ import operator
 import random
 import string
 
-CHOICE = string.ascii_letters + string.digits
-
-def randomstring(times, chars):
-    s = ''
-    for _ in xrange(times):
-        s += random.choice(chars)
-    return s
-
-def generate_key():
-    key = random.randint(1, 1000)
-    return key
-
-def generate_value():
-    value = randomstring(random.randint(5, 15), CHOICE)
-    return value
+from functions import generate_key, generate_value
 
 def main():
     dizio = dict()
