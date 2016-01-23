@@ -1,18 +1,19 @@
 #!/usr/bin/env python
-# EX 06: create a dictionary with 3 random keys and 3 random strings as elements
+# 10) create a dictionary with strings as key and tuple as elements
 
 import random
 import string
-from functions import randomstring, generate_key, generate_value
+
+from functions import generate_key, generate_value
 
 def main():
     dizio = dict()
-    for _ in xrange(3):
+    for _ in xrange(5):
         chiave = generate_key()
         while(dizio.has_key(chiave)):
             chiave = generate_key()
 
-        dizio[chiave] = generate_value()        
+        dizio[chiave] = (generate_value(), generate_value())
     print (dizio)
 
 if __name__ == '__main__':

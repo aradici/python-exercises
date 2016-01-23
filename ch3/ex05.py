@@ -3,12 +3,7 @@
 
 import random
 import string
-
-def randomstring(times, chars):
-    s = ''
-    for _ in xrange(times):
-        s += random.choice(chars)
-    return s
+from functions import randomstring
 
 def main():
     lista = []
@@ -17,9 +12,8 @@ def main():
                                string.ascii_letters + string.digits )
         lista.append(stringa)
     lista2 = lista[:-1]
-    print("this is the content of the original list: {}".format(lista))
-    print("this is the content of the copied list without the last element: 
-          {}".format(lista2))
+    print("this is the original list: {}".format(lista))
+    print("this is the copied list without the last element: {}".format(lista2))
 
 if __name__ == '__main__':
     main()
